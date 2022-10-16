@@ -51,6 +51,7 @@ great = (): void =>{
 }
 
 const add = (a: number, b: number, c?: number | string = 3): number =>{
+    console.log(c)
     return a + b;
     // your optional parameter should be the last one.
 }
@@ -60,3 +61,5 @@ type userType = {name: string, age: number, city: string}
 const logDetails = (user: userType) =>{
     console.log(`${user.name} has a lot of details like ${user}`)
 }
+
+logDetails({name: 'fartuun', age: 20, city: 'mogadisho'});
