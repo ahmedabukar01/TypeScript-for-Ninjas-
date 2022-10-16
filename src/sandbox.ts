@@ -41,3 +41,5 @@ ninjaOne = {
     age: 30,
     beltColor: 'black'
 }
+
+console.log('everything is working well');
