@@ -36,3 +36,6 @@ const add = (a, b, c = 3) => {
     return a + b;
     // your optional parameter should be the last one.
 };
+const logDetails = (user) => {
+    console.log(`${user.name} has a lot of details like ${user}`);
+};
