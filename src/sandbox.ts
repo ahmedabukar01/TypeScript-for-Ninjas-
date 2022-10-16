@@ -43,3 +43,14 @@ ninjaOne = {
 }
 
 console.log('everything is working well');
+
+// functions
+let great: Function;
+great = (): void =>{
+    console.log('hello ...')
+}
+
+const add = (a: number, b: number, c?: number | string = 3): number =>{
+    return a + b;
+    // your optional parameter should be the last one.
+}

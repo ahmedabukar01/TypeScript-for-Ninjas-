@@ -27,3 +27,12 @@ ninjaOne = {
     beltColor: 'black'
 };
 console.log('everything is working well');
+// functions
+let great;
+great = () => {
+    console.log('hello ...');
+};
+const add = (a, b, c = 3) => {
+    return a + b;
+    // your optional parameter should be the last one.
+};
