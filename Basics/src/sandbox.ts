@@ -63,3 +63,9 @@ const logDetails = (user: userType) =>{
 }
 
 logDetails({name: 'fartuun', age: 20, city: 'mogadisho'});
+
+// function signature
+let funcSign: (a: number, b: number) => number;
+funcSign = (a, b) =>{
+    return a + b;
+}
