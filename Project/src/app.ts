@@ -19,3 +19,27 @@ form.addEventListener('submit',(e)=>{
     )
 })
 
+// classes
+class Invoice {
+    client: string
+    details: string
+    amount: string
+
+    constructor(c: string, d: string, a: string){
+        this.client = c
+        this.details = d;
+        this.amount = a;
+    }
+
+    format(){
+        console.log(`${this.client} owes ${this.amount} for ${this.details}`);
+    }
+}
+
+const mario = new Invoice('Mario', 'building website', '300');
+const luigi = new Invoice('Luigi', 'developed application', '2100');
+const invoices: Invoice[] = [];
+
+invoices.push(luigi);
+
+console.log(mario.format())
