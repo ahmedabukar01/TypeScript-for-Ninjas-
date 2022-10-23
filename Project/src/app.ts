@@ -21,9 +21,9 @@ form.addEventListener('submit',(e)=>{
 
 // classes
 class Invoice {
-    client: string
-    details: string
-    amount: string
+    readonly client: string
+    private details: string
+    public amount: string
 
     constructor(c: string, d: string, a: string){
         this.client = c

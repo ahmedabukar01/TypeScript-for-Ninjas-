@@ -24,4 +24,7 @@ class Invoice {
     }
 }
 const mario = new Invoice('Mario', 'building website', '300');
+const luigi = new Invoice('Luigi', 'developed application', '2100');
+const invoices = [];
+invoices.push(luigi);
 console.log(mario.format());
